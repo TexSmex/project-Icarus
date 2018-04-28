@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Bootstrap-required meta-tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Local external CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Local external JavaScript file -->
+    <script src="assets/javascript/script.js"></script>
+
+    <!-- Google font test -->
+    <link href="https://fonts.googleapis.com/css?family=IShadows+Into+Light" rel="stylesheet">
+
+    <title>Rumble By The River</title>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark m-0">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="assets/images/rbtr_logo_white.png" width="275px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">HOME
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="#mVs">MINNEAPOLIS vs ST.PAUL</a>
+                <a class="nav-item nav-link" href="#taleOfTheTape">TALE OF THE TAPE</a>
+                <a class="nav-item nav-link" href="#">CAST YOUR VOTE!</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Land page with image -->
+    <div class="card card-outline-none bg-dark text-white border-0">
+        <img class="card-img rounded-0" src="assets/images/burgers_fit.jpg" alt="Card image">
+    </div>
+ 
+    <!-- Intro (our pitch to users) -->
+    <div class="jumbotron jumbotron-fluid text-center m-0">
+        <div class="container">
+            <h1 class="display-3">MINNEAPOLIS vs ST.PAUL</h1>
+            <p class="lead">The land of 10,000 lakes is more than a frozen permafrost!</p>
+            <hr class="my-3">
+            <p>It's a travel destination that invokes the envy of its neighbors, mostly from Wisconsin, who stare across the St. Croix, in awe of the greatness that is Minnesota. At the heart of the state are the powerhouse cities of Minneapolis and St. Paul, nestled along the banks of the mighty Mississippi River, within a stone's throw of each other. Sure, people come here for the lakes, the North Shore, and America's largest mall ... but if they're being honest, they'll tell you they're really here to sample our world-class culinary offerings - which prompt us to ask ...</p>
+            <p id="question" class="display-4"><span id="stylizedText">&nbsp;When it comes to food, which city does it better?&nbsp;</span></p>
+        </div>
+    </div>
+
+    <!-- Tale of the Tape- Stats on Mpls/Stp. Button to vote included for each city -->
+    <div class="container mt-5">
+        <div id="taleOfTheTape" class="row m-0 p-0 text-center">
+            <div class="col-md-12 m-0 p-0">
+                <h1 class="display-3">TALE OF THE TAPE:</h1>
+            </div>
+        </div>
+    
+        <div class="row m-0 p-0 text-center">
+            <div class="col-md-12 m-0 p-0">
+                <div class="card card-outline-none bg-faded px-3 py-5 border-0">
+                    <div class="card-block">
+                        <table class="table table-borderless table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                <th scope="col"></th>
+                                <th scope="col">
+                                    <h1 class="display-5">MINNEAPOLIS</h1>    
+                                </th>
+                                <th scope="col">
+                                    <h1 class="display-5">ST.PAUL</h1>
+                                </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">POPULATION</th>
+                                    <td>350,000</td>
+                                    <td>275,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">AVERAGE INCOME</th>
+                                    <td>$50,000</td>
+                                    <td>$47,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BURGER JOINTS</th>
+                                    <td>476</td>
+                                    <td>458</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MEXICAN RESTAURANTS</th>
+                                    <td>476</td>
+                                    <td>458</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ASIAN CUISINE</th>
+                                    <td>476</td>
+                                    <td>458</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MEDITERRANEAN</th>
+                                    <td>476</td>
+                                    <td>458</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">OTHER CATEGORIES</th>
+                                    <td>476</td>
+                                    <td>458</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td><a class="btn btn-primary btn-lg" href="#" role="button">Vote Minneapolis</a></td>
+                                    <td><a class="btn btn-primary btn-lg" href="#" role="button">Vote St.Paul</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<div class="container">
+    <div class="row m-0 p-0 text-center">
+        <div class="col-md-6 m-0 p-0">
+            <div class="card card-outline-none bg-faded px-3 py-5 border-0">
+                <div class="card-block">
+                    <h1 class="display-5">MINNEAPOLIS</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 m-0 p-0">
+            <div class="card card-outline-none bg-faded px-3 py-5 border-0">
+                <div class="card-block">
+                    <h1 class="display-5">ST.PAUL</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!-- Footer- Credits & Misc. info -->
+<div class="footer mt-5 p-5">
+    <div class="row m-0">
+        <div class="col-md-12">
+            <p>RUMBLE BY THE RIVER is a TEAM ICARUS production, developed as a part of the UMN Coding Bootcamp's Student Coursework. © 2018. Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+</html>

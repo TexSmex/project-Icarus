@@ -1,0 +1,73 @@
+body {
+    background-image: url("../images/samplebg03.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #191919;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+.navbar {
+    background: #191919 !important;
+}
+
+.nav-item {
+    font-weight: bold;
+    margin: 15px;
+}
+
+.nav-link:hover {
+    color: orange !important;
+}
+
+#logo {
+    margin-left: 15px;
+}
+
+.card {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+.jumbotron {
+    background: #f0f0f0;
+    height: 91vh;
+}
+
+#question {
+    margin-top: 40px;
+}
+
+#stylizedText {
+    background: black;
+    color: white;
+}
+
+#taleOfTheTape {
+    background: #f0f0f0;
+}
+
+.btn {
+    background: orange;
+}
+
+.box {
+    color: #f0f0f0;
+    margin-top: 75px;
+}
+
+.footer {
+    background: #191919;
+    color: #f0f0f0;
+    margin-top: 150px;
+    align-content: center;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+}
