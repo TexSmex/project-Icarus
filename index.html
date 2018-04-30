@@ -1,337 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <!-- Bootstrap-required meta-tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0  shrink-to-fit=no">
+    <!-- Bootstrap-required meta-tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  shrink-to-fit=no">
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-        <!-- Local external CSS file -->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Local external CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- Local external JavaScript file -->
-        <script src="assets/javascript/script.js"></script>
+    <!-- Local external JavaScript file -->
+    <script src="assets/javascript/script.js"></script>
 
-        <!-- Google font test -->
-        <link href="https://fonts.googleapis.com/css?family=IShadows+Into+Light" rel="stylesheet">
+    <!-- Google font test -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light" rel="stylesheet">
 
-        <title>Rumble By The River</title>
+    <title>Rumble By The River</title>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!-- Navbar -->
-        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark m-0">
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark m-0">
 
-            <a class="navbar-brand" href="#">
-                <img id="logo" src="assets/images/rbtr_logo_white.png" width="275px">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">HOME
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#mVs">MINNEAPOLIS vs ST.PAUL</a>
-                    <a class="nav-item nav-link" href="#taleOfTheTape">A TALE OF TWO CITIES</a>
-                    <a class="nav-item nav-link" href="#">CAST YOUR VOTE!</a>
-                </div>
-            </div>
-
-        </nav>
-
-        <!-- Landing Page: Has image to kickoff theme w/ users -->
-        <div id="landingPage" class="card card-outline-none bg-dark text-white border-0">
-            <img class="card-img rounded-0" src="assets/images/burgers_fit.jpg" alt="Burger">
-        </div>
-
-        <!-- Intro Page: Presents our "pitch" to users -->
-        <div id="introPage" class="jumbotron jumbotron-fluid text-center m-0">
-            <div class="container">
-
-                <h1 class="display-3">Minneapolis vs St.Paul</h1>
-                <p class="lead">The land of 10,000 lakes is more than a frozen permafrost!</p>
-                <hr class="my-3">
-                <p>It's a travel destination that invokes the envy of its neighbors, mostly from Wisconsin, who stare across the
-                    St. Croix, in awe of the greatness that is Minnesota. At the heart of the state are the powerhouse cities
-                    of Minneapolis and St. Paul, nestled along the banks of the mighty Mississippi River, within a stone's throw
-                    of each other. Sure, people come here for the lakes, the North Shore, and America's largest mall ... but
-                    if they're being honest, they'll tell you they're really here to sample our world-class culinary offerings
-                    - which prompt us to ask ...</p>
-                <p id="mainQuestion" class="h1">
-                    <span id="stylizedText">&nbsp;When it comes to food, which city does it better?&nbsp;</span>
-                </p>
-
+        <a class="navbar-brand" href="#">
+            <img id="navLogo" src="assets/images/rbtr_logo_white.png" width="275px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">HOME
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="#introPage">MINNEAPOLIS vs ST.PAUL</a>
+                <a class="nav-item nav-link" href="#taleOfTwo">A TALE OF TWO CITIES</a>
+                <a id="navLinkBold" class="nav-item nav-link" href="#castYourVote">&nbsp;CAST YOUR VOTE!&nbsp;</a>
             </div>
         </div>
 
-        <!-- A Tale of Two Cities: Info about cities users are asked to compare -->
-        <div id="taleOfTwo" class="jumbotron jumbotron-fluid text-center m-0">
-            <div class="container">
+    </nav>
 
-                <div class="row m-0 p-3 text-center bg-white">
-                    <div class="col-md-12">
-                        <h1 class="display-3">A Tale of Two Cities</h1>
-                        <p class="lead">A breakdown, by the numbers ...</p>
-                        <hr class="my-3">
-                    </div>
-                </div>
+    <!-- Landing Page: Has image to kickoff theme w/ users -->
+    <div id="landingPage" class="card card-outline-none text-white border-0">
+        <img class="card-img rounded-0" src="assets/images/burgers_fit.jpg" alt="Burger">
+    </div>
 
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <div class="card bg-transparent border-0">
-                            <div class="card-block">
-                                <table class="table table-borderless table-light table-striped table-responsive w-100 d-block d-md-table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">
-                                                <h1 class="display-5">MINNEAPOLIS</h1>
-                                            </th>
-                                            <th scope="col">
-                                                <h1 class="display-5">ST.PAUL</h1>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">POPULATION</th>
-                                            <td>350,000</td>
-                                            <td>275,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">AVERAGE INCOME</th>
-                                            <td>$50,000</td>
-                                            <td>$47,000</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">BURGER JOINTS</th>
-                                            <td>476</td>
-                                            <td>458</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">MEXICAN RESTAURANTS</th>
-                                            <td>476</td>
-                                            <td>458</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">ASIAN CUISINE</th>
-                                            <td>476</td>
-                                            <td>458</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">MEDITERRANEAN</th>
-                                            <td>476</td>
-                                            <td>458</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">OTHER CATEGORIES</th>
-                                            <td>476</td>
-                                            <td>458</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"></th>
-                                            <td>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Intro Page: Presents our "pitch" to users -->
+    <div id="introPage" class="row row-eq-height m-0 p-0">
 
-            </div>
+        <div class="col-md-4 m-0 p-0">
+            <img id="introPageImg" src="../../Desktop/pancake02.jpg">
         </div>
 
-        <!-- Cast Your Vote: Users fill form to cast votes -->
-        <div id="castYourVote" class="jumbotron jumbotron-fluid text-center m-0">
-            <div class="container">
-
-                <h1 class="display-3">Cast Your Vote!</h1>
-                <p class="lead">Minneapolis or St.Paul? ...You decide!</p>
-                <hr class="my-3">
-
-                <form class="text-left">
-
-                    <div id="" class="container p-0 mb-4">
-                        <p class="h3 mt-4">Your vote:</p>
-                        <div class="form-check form-check-inline ml-5">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                <p class="h1 my-4 ml-2">Minneapolis</p>
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline ml-5">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
-                                <p class="h1 my-4 ml-2">St.Paul</p>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">
-                            <p class="h3">Full Name</p>
-                        </label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Paul Bunyan">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">
-                            <p class="h3">Email</p>
-                        </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="BlueOx@gmail.com">
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="exampleFormControlTextarea1">
-                            <p class="h3">Comments</p></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Hands down, this city is the best one ..." rows="3"></textarea>
-                    </div>
-                    <div class="row p-0 m-0">
-                        <p class="lead">
-                            <a id="submitBtn" class="btn btn-primary btn-lg mr-4" href="#" role="button">Submit</a>
-                        </p>
-                        <p class="lead">
-                            <a id="resultsBtn" class="btn btn-primary btn-lg ml-" href="#" role="button">View Results</a>
-                        </p>
-                    </div>
-
-                </form>
-
-            </div>
-        </div>
-
-        <!-- Results: After votes, user will be presented this page to see results -->
-        <div id="theResults" class="jumbotron jumbotron-fluid text-center m-0">
-            <div class="container">
-
-                <div class="row m-0 p-3 text-center bg-white">
-                    <div class="col-md-12">
-                        <h1 class="display-3">The Results</h1>
-                        <p class="lead">The people have decided. The winning city is ...</p>
-                        <hr class="my-3">
-                    </div>
+        <div class="col-md-8 m-0 p-0">
+            <div id="introPageJumbo" class="jumbotron jumbotron-fluid text-left m-0 px-5">
+                <div class="container">
+                    <h1 class="display-3">[ MINNEAPOLIS vs ST.PAUL ]</h1>
+                    <p class="lead">The land of 10,000 lakes is more than a frozen permafrost!</p>
+                    <hr class="my-3">
+                    <p>It's a travel destination that invokes the envy of its neighbors, mostly from Wisconsin, who stare across
+                        the St. Croix, in awe of the greatness that is Minnesota. At the heart of the state are the powerhouse
+                        cities of Minneapolis and St. Paul, nestled along the banks of the mighty Mississippi River, within
+                        a stone's throw of each other. Sure, people come here for the lakes, the North Shore, and America's
+                        largest mall ... but if they're being honest, they'll tell you they're really here to sample our
+                        world-class culinary offerings - which prompt us to ask ...</p>
+                    <p id="mainQuestion" class="h1">
+                        <span id="stylizedText">&nbsp;When it comes to food, which city does it better?&nbsp;</span>
+                    </p>
                 </div>
-
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <div class="card bg-white border-0 p-5">
-
-                            <div class="container">
-
-                                <div class="progress mb-5" style="height: 50px">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                                        <p class="h3">Minneapolis</p>
-                                    </div>
-                                    <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                        <p class="h3">St.Paul</p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col-md-4 m-0 p-0">
-                                        <div class="card px-3 border-0">
-                                            <div class="card-block">
-                                                <h1 class="display-5">Minneapolis</h1>
-                                                <blockquote class="blockquote text-center">
-                                                    <p class="mb-0">"An apple-a-day keeps the doctor away!"</p>
-                                                    <footer class="blockquote-footer">Johnny Appleseed, The Original Organic Apple Enthusiast</footer>
-                                                </blockquote>
-                                            </div>
-                                        </div>    
-                                    </div>
-
-                                    <div class="col-md-4 m-0 p-0">
-                                        <div class="card px-3 border-0">
-                                            <div class="card-block">
-                                                <h1 class="display-5">St.Paul</h1>
-                                                <blockquote class="blockquote text-center">
-                                                    <p class="mb-0">"It's tempting to want to live in the past. It's familiar. It's comfortable. But it's where fossils come from."</p>
-                                                    <footer class="blockquote-footer">Captain America, Avengers</footer>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4 m-0 p-0">
-                                        <div class="card px-3 border-0">
-                                            <div class="card-block">
-                                                <h1 class="display-5">Minneapolis</h1>
-                                                <blockquote class="blockquote text-center">
-                                                    <p class="mb-0">"Who picked a pack of pickled pepper?"</p>
-                                                    <footer class="blockquote-footer">Peter Piper, Pepper-Picker</footer>
-                                                </blockquote>
-                                            </div>
-                                        </div>    
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col-md-6 m-0 p-0">
-                                        <div class="card px-3 border-0">
-                                            <div class="card-block">
-                                                <h1 class="display-5">St.Paul</h1>
-                                                <blockquote class="blockquote text-center">
-                                                    <p class="mb-0">"What, your mom's name is Martha? ...I take back what I said about you. Let's just be friends now!"</p>
-                                                    <footer class="blockquote-footer">Superman, Son of Jor-El</footer>
-                                                </blockquote>
-                                            </div>
-                                        </div>    
-                                    </div>
-
-                                    <div class="col-md-6 m-0 p-0">
-                                        <div class="card px-3 border-0">
-                                            <div class="card-block">
-                                                <h1 class="display-5">Minneapolis</h1>
-                                                <blockquote class="blockquote text-center">
-                                                    <p class="mb-0">"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. Run from it. Destiny still arrives."</p>
-                                                    <footer class="blockquote-footer">Thanos, Ruler of Universe</footer>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-
-
-    </body>
-
-    <!-- Footer: Credits and other info -->
-    <div id="theFooter" class="footer mt-0 p-5">
-        <div class="row m-0">
-            <div class="col-md-12">
-                <p>RUMBLE BY THE RIVER is a TEAM ICARUS production, developed as a part of the UMN Coding Bootcamp's Student Coursework.
-                    © 2018. Rights Reserved.</p>
-            </div>
         </div>
     </div>
+
+    <!-- A Tale of Two Cities: Info about cities users are asked to compare -->
+    <div id="taleOfTwo" class="jumbotron jumbotron-fluid text-center m-0">
+        <div class="container">
+
+            <div id="taleDivBG" class="row m-0 p-3 text-center">
+                <div class="col-md-12">
+                    <h1 class="display-3 mt-3 mb-1">[ A TALE OF TWO CITIES ]</h1>
+                    <p class="lead">A breakdown, by the numbers ...</p>
+                    <hr class="my-3">
+                </div>
+            </div>
+
+
+            <table class="table table-borderless table-striped table-light table-responsive w-100 d-block d-md-table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">
+                            <h1 class="display-5">Minneapolis</h1>
+                        </th>
+                        <th scope="col">
+                            <h1 class="display-5">St.Paul</h1>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-right">POPULATION</th>
+                        <td>350,000</td>
+                        <td>275,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-right">AVERAGE INCOME</th>
+                        <td>$50,000</td>
+                        <td>$47,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-right">BURGER JOINTS</th>
+                        <td>476</td>
+                        <td>458</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-right">MEXICAN RESTAURANTS</th>
+                        <td>476</td>
+                        <td>458</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-right">ASIAN CUISINE</th>
+                        <td>476</td>
+                        <td>458</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-right">MEDITERRANEAN</th>
+                        <td>476</td>
+                        <td>458</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-right">OTHER CATEGORIES</th>
+                        <td>476</td>
+                        <td>458</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="pb-5"></th>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+    <!-- Cast Your Vote: Users fill form to cast votes -->
+    <div id="castYourVote" class="row row-eq-height m-0 p-0">
+
+        <div class="col-md-8 m-0 p-0">
+            <div id="castYourVoteJumbo" class="jumbotron jumbotron-fluid text-right m-0 px-5">
+                <div class="container">
+
+                    <h1 class="display-3 m-0 p-0">[ CAST YOUR VOTE! ]</h1>
+                    <p class="lead">Minneapolis or St.Paul? ...You decide!</p>
+                    <hr class="my-3">
+
+                    <form class="text-right">
+                        <div class="form-check mt-5">
+                            <input class="userFormVoteInput" type="radio" name="voteFor" id="voteFor1" value="option1" checked>
+                            <label class="userFormVoteLabel" for="voteFor1">
+                                <p class="h1">Minneapolis</p>
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 mb-2">
+                            <input class="userFormVoteInput" type="radio" name="voteFor" id="voteFor2" value="option2">
+                            <label class="userFormVoteLabel" for="voteFor2">
+                                <p class="h1">St.Paul</p>
+                            </label>
+                        </div>
+                        <div class="form-group mb-0 p-0">
+                            <label for="userFormNameInput">
+                            </label>
+                            <input type="text" class="form-control text-right" id="userFormNameInput1" placeholder="Full Name (i.e. Paul Bunyan)">
+                        </div>
+                        <div class="form-group m-0 p-0">
+                            <label for="userFormEmailInput">
+                            </label>
+                            <input type="email" class="form-control text-right" id="userFormEmailInput1" placeholder="Email (i.e. BlueOx@gmail.com)">
+                        </div>
+                        <div class="form-group mb-4 p-0">
+                            <label for="userFormCommentInput">
+                            </label>
+                            <textarea class="form-control text-right" id="userFormCommentInput1" placeholder="Comment (i.e. 'Hands down, this city is the best one ...')"
+                                rows="3"></textarea>
+                        </div>
+                        <div id="btnContainer" class="row p-0 m-0">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3 m-0 p-0">
+                                <p class="lead">
+                                    <a id="submitBtn" class="btn btn-primary btn-lg border-0" href="#" role="button">SUBMIT</a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 m-0 p-0">
+                                <p class="lead">
+                                    <a id="resultsBtn" class="btn btn-primary btn-lg border-0" href="#" role="button">VIEW RESULTS</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 m-0 p-0">
+                <img id="castYourVoteImg" src="../../Desktop/pizza02.jpg">
+        </div>
+
+    </div>
+
+    <!-- Results: After votes, user will be presented this page to see results -->
+    <div id="theResults" class="jumbotron jumbotron-fluid text-center m-0">
+
+        <div class="container">
+
+            <div id="resultsDivBG" class="row m-0 p-3 text-center">
+                <div class="col-md-12">
+                    <h1 class="display-3 mt-3 mb-1">[ THE RESULTS ]</h1>
+                    <p class="lead">The people have decided. The winning city is ...</p>
+                    <hr class="my-3">
+                </div>
+            </div>
+
+            <div class="card border-0 p-5">
+
+                <div id="resultsVoteCount" class="progress mb-5" style="height: 50px">
+                    <div id="voteCountMpls" class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        <p class="h3">Minneapolis</p>
+                    </div>
+                    <div id="VoteCountStp" class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                        <p class="h3">St.Paul</p>
+                    </div>
+                </div>
+
+                <div id="resultsDisplayComments" class="row">
+
+                    <div class="col-md-4 m-0 p-0">
+                        <div class="card px-3 border-0">
+                            <h1 class="display-5">Minneapolis</h1>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"An apple-a-day keeps the doctor away!"</p>
+                                <footer class="blockquote-footer">Johnny Appleseed, The Original Organic Apple Enthusiast</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 m-0 p-0">
+                        <div class="card px-3 border-0">
+                            <h1 class="display-5">St.Paul</h1>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"It's tempting to want to live in the past. It's familiar. It's comfortable. But it's where
+                                    fossils come from."</p>
+                                <footer class="blockquote-footer">Captain America, Avengers</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 m-0 p-0">
+                        <div class="card px-3 border-0">
+                            <h1 class="display-5">Minneapolis</h1>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"Who picked a pack of pickled pepper?"</p>
+                                <footer class="blockquote-footer">Peter Piper, Pepper-Picker</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="card px-3 border-0">
+                            <h1 class="display-5">St.Paul</h1>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"What, your mom's name is Martha? ...I take back what I said about you. Let's just be friends
+                                    now!"
+                                </p>
+                                <footer class="blockquote-footer">Superman, Son of Jor-El</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="card px-3 border-0">
+                            <h1 class="display-5">Minneapolis</h1>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"In time, you will know what it's like to lose. To feel so desperately that you're right.
+                                    Yet to fail all the same. Dread it. Run from it. Destiny still arrives."</p>
+                                <footer class="blockquote-footer">Thanos, Ruler of Universe</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<!-- Footer: Credits and other info -->
+<div id="theFooter" class="footer mt-0 p-5">
+    <div class="row m-0">
+        <div class="col-md-12">
+            <p>RUMBLE BY THE RIVER is a TEAM ICARUS production, developed as a part of the UMN Coding Bootcamp's Student Coursework.
+                © 2018. Rights Reserved.</p>
+        </div>
+    </div>
+</div>
 
 </html>

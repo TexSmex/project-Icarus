@@ -1,7 +1,10 @@
 /* Standard CSS mods */
 
 body {
+    background: orange;
     color: #191919;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
 }
 
 /* H1 - H6 font sizes */
@@ -26,7 +29,10 @@ h6 {
 /* Bootstrap class mods - Listed top-to-bottom as displayed */
 
 .navbar {
-    background: #191919 !important;
+    /*background: #191919 !important;*/
+    background: #191919;
+    z-index: 100;
+    
 }
 
 .nav-item {
@@ -34,34 +40,83 @@ h6 {
     margin: 15px;
 }
 
+.nav-link {
+    color: white !important;
+}
+
 .nav-link:hover {
     color: orange !important;
+}
+
+.nav-link:active {
+    color: #ECECEC !important;
 }
 
 .card {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+    background: #ECECEC;
 }
 
 .jumbotron {
-    background: #f0f0f0;
+    background: #ECECEC;
+}
+
+.display-3 {
+    letter-spacing: -5px;
+    font-weight: bold;
+}
+
+.lead {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.table {
+    background: #ECECEC;
 }
 
 .btn {
-    background: orange;
+    background: #F97242;
     width: 200px;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background: orange;
 }
 
 
 /* Added ID-tag mods - Listed top-to-bottom as displayed */
 
-#logo {
+#navLinkBold {
+    background:#F97242;
+}
+
+#navLinkBold:hover {
+    background: orange;
+    color: white !important;
+}
+
+#navLogo {
     margin-left: 15px;
 }
 
+#introPageImg {
+    width: 100%;
+    overflow: hidden;
+}
+
+#introPageJumbo {
+    height: 91vh;
+    width: 100%;
+}
+
 #mainQuestion {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #stylizedText {
@@ -69,9 +124,41 @@ h6 {
     color: white;
 }
 
+#stylizedText:hover {
+    background: #F97242;
+}
+
 #taleOfTwo {
     background-image: url("../images/samplebg03.jpg");
     background-size: cover;
+}
+
+#taleDivBG {
+    background: #ECECEC;
+}
+
+#castYourVoteJumbo {
+    height: 91vh;
+    width: 100%;
+}
+
+#submitBtn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: default;
+    letter-spacing: 0px;
+}
+
+#resultsBtn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: default;
+    letter-spacing: 0px;
+}
+
+#castYourVoteImg {
+    width: 100%;
+    overflow: hidden;
 }
 
 #theResults {
@@ -79,8 +166,12 @@ h6 {
     background-size: cover;
 }
 
+#resultsDivBG {
+    background: #ECECEC;
+}
+
 #theFooter {
-    background: #191919;
+    background:#191919;
     color: #f0f0f0;
     margin-top: 150px;
     align-content: center;
