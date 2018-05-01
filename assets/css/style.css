@@ -1,7 +1,7 @@
 /* Standard CSS mods */
 
 body {
-    background: orange;
+    background: white;
     color: #191919;
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Roboto Condensed', sans-serif;*/
@@ -107,6 +107,7 @@ h6 {
 
 #introPageImg {
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
