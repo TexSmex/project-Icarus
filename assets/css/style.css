@@ -89,6 +89,10 @@ h6 {
     background: orange;
 }
 
+/* Custom class mods */
+
+
+
 
 /* Added ID-tag mods - Listed top-to-bottom as displayed */
 
@@ -118,6 +122,11 @@ h6 {
 
 #mainQuestion {
     margin-top: 50px;
+}
+
+.container {
+
+    height: 100%;
 }
 
 #stylizedText {
