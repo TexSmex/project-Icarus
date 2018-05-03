@@ -181,3 +181,44 @@ h6 {
     width: 100%;
     padding-top: 20px;
 }
+
+/* Hide the text to look nice on the bars */
+
+#VoteCountStp , #voteCountMpls {
+
+    overflow: hidden ;
+    
+    }
+    
+    #resultsVoteCount {
+    
+        width: 100%;
+        height:  50px;
+        background-color: gray;
+    }
+    
+    #VoteCountStp {
+    
+        height: 50px;
+        background-color: darkblue;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        float: left;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+      }
+    
+      #voteCountMpls {
+    
+        height: 50px;
+        background-color: red;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        float: right;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+      }
