@@ -97,6 +97,27 @@ $( document ).ready(function() {
      
  
   });
+
+// Retrieving users comments :
+
+database.ref("/user").on("child_added", function(childSnapshot, prevChildKey) {
+
+    console.log(childSnapshot.val());
+  
+    // Store everything into a variable.
+    var Name = childSnapshot.val().name;
+    var CommentUser = childSnapshot.val().comment;
+    
+// MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    var space = $("<br>")
+    var nama = $("<div>").text(Name+" : ").addClass("name col-4");
+    var com = $("<div>").text(CommentUser).addClass("comment col-8");
+    var userDiv = $("<div>").addClass("row").append(nama,com,space);
+    $("#resultsDisplayComments").append(userDiv);
+    
+});
   
   
      $( "#submitBtn" ).click(function() {
@@ -129,6 +150,24 @@ $( document ).ready(function() {
      intStp = setInterval(progressBarSTP,Tmsp);
  
      console.log("In the submit button :"+msp,stp);
+
+     // comments here :
+
+     var userName = $("#userName").val().trim();
+     var userComment = $("#userComment").val().trim();
+
+    var user = {
+
+        name : userName,
+        comment : userComment
+    }
+
+    database.ref("/user").push(user);
+    
+    //clear the inputs :
+
+    $("#userName").val("");
+    $("#userComment").val("");
  
     
      });
