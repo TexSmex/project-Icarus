@@ -102,7 +102,7 @@
                 </div>
             </div>
 
-            <table class="table table-borderless table-striped table-light table-responsive w-100 d-block d-md-table">
+            <table class="table table-borderless table-striped table-light table-responsive w-100 d-block d-md-table mb-0">
                 <thead>
                     <tr>
                         <th scope="col"></th>
@@ -151,7 +151,7 @@
                         <td>458</td>
                     </tr>
                     <tr>
-                        <th scope="row" class="pb-5"></th>
+                        <th scope="row" class="p-0 m-0"></th>
                         <td>
                         </td>
                     </tr>
@@ -159,12 +159,63 @@
             </table>
 
             <div class="row m-0 p-0">
+                
                 <div class="col-md-6 m-0 p-0">
                     <div class="container m-0 p-0" style="background: #ececec;">
-                        <div class="widget_wrap" style="width:100%;height:797px;display:inline-block;border-radius:0px;"><iframe src="https://www.zomato.com/widgets/all_collections.php?city_id=826&theme=dark" style="position:relative;width:100%;height:100%;" border="0" frameborder="0"></iframe>
+                        <div class="widget_wrap" style="width:100%;height:400px;display:inline-block;border-radius:0px;">
+                            <iframe src="https://www.zomato.com/widgets/all_collections.php?city_id=826&theme=dark" style="position:relative;width:100%;height:100%;"
+                                border="0" frameborder="0"></iframe>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 m-0 p-0">
+                    <div class="container m-0 p-0">
+                        <style>
+                            /* Always set the map height explicitly to define the size of the div
+                                     * element that contains the map. */
+
+                            #map {
+                                height: 100%;
+                            }
+
+                            /* Optional: Makes the sample page fill the window. */
+
+                            html,
+                            body {
+                                height: 100%;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        </style>
+                        </head>
+
+                        <body>
+                            <div id="map"></div>
+                            <script>
+                                    var map;
+                                    function initMap() {
+                                        //MSP: Longitude‎: ‎-93.258133 Latitude‎: ‎44.986656
+                                        //STP: 44.954445, -93.091301
+                                      map = new google.maps.Map(document.getElementById('map'), {
+                                        center: {lat: 44.970000, lng: -93.175133},
+                                        zoom: 11
+                                      });
+                               
+                                      var myCenter = new google.maps.LatLng(44.954445, -93.091301);
+                                      var myMsp = new google.maps.LatLng(44.986656, -93.258133);
+                                      var marker1= new google.maps.Marker({position:myCenter});
+                                      var marker2= new google.maps.Marker({position:myMsp});
+                                      marker1.setMap(map);
+                                      marker2.setMap(map);
+                               
+                                    }
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7An-IsU7ks3NdcHj_DTwtS4fw83XBJA&callback=initMap" async
+                                defer></script>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
@@ -180,6 +231,7 @@
                     <h1 class="display-3 m-0 p-0">[ CAST YOUR VOTE! ]</h1>
                     <p class="lead">Minneapolis or St.Paul? ...You decide!</p>
                     <hr class="my-3">
+                    <p>Fill out the form to cast your vote, then click 'submit' to see the results.</p>
 
                     <form class="text-right">
                         <div class="form-check mt-5">
@@ -213,14 +265,10 @@
                         <div id="btnContainer" class="row p-0 m-0">
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-0 p-0">
                                 <p class="lead">
                                     <a id="submitBtn" class="btn btn-primary btn-lg border-0" href="#" role="button">SUBMIT</a>
-                                </p>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-0 p-0">
-                                <p class="lead">
-                                    <a id="resultsBtn" class="btn btn-primary btn-lg border-0" href="#" role="button">VIEW RESULTS</a>
                                 </p>
                             </div>
                         </div>
@@ -231,7 +279,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12 m-0 p-0">
-                <img id="castYourVoteImg" src="assets/images/castYourVoteImg_pizza.jpg">
+            <img id="castYourVoteImg" src="assets/images/castYourVoteImg_pizza.jpg">
         </div>
 
     </div>
@@ -252,7 +300,8 @@
             <div class="card border-0 p-5">
 
                 <div id="resultsVoteCount" class="progress mb-5" style="height: 50px">
-                    <div id="voteCountMpls" class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                    <div id="voteCountMpls" class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="15" aria-valuemin="0"
+                        aria-valuemax="100">
                         <p class="h3">Minneapolis</p>
                     </div>
                     <div id="VoteCountStp" class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
@@ -330,17 +379,17 @@
 
 
 
-</body>
+    </body>
 
-<!-- Footer: Credits and other info -->
+    <!-- Footer: Credits and other info -->
 
-<div id="theFooter" class="footer mt-0 p-5">
-    <div class="row m-0">
-        <div class="col-md-12">
-            <p>RUMBLE BY THE RIVER is a TEAM ICARUS production, developed as a part of the UMN Coding Bootcamp's Student Coursework.
-                © 2018. Rights Reserved.</p>
+    <div id="theFooter" class="footer mt-0 p-5">
+        <div class="row m-0">
+            <div class="col-md-12">
+                <p>RUMBLE BY THE RIVER is a TEAM ICARUS production, developed as a part of the UMN Coding Bootcamp's Student
+                    Coursework. © 2018. Rights Reserved.</p>
+            </div>
         </div>
     </div>
-</div>
 
 </html>
