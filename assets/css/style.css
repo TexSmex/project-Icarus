@@ -4,22 +4,9 @@ body {
     background: white;
     color: #191919;
     font-family: 'Roboto', sans-serif;
-    /*font-family: 'Roboto Condensed', sans-serif;*/
 }
 
 /* H1 - H6 font sizes */
-
-h1 {
-    
-}
-
-h2 {
-    
-}
-
-h3 {
-    
-}
 
 h6 {
     font-size: 12px;
@@ -89,11 +76,6 @@ h6 {
     background: orange;
 }
 
-/* Custom class mods */
-
-
-
-
 /* Added ID-tag mods - Listed top-to-bottom as displayed */
 
 #navLinkBold {
@@ -149,6 +131,11 @@ h6 {
 
 #taleDivBG {
     background: #ECECEC;
+}
+
+#map {
+    height: 100%;
+
 }
 
 #castYourVoteJumbo {
