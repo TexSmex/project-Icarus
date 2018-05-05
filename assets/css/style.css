@@ -227,18 +227,19 @@ h6 {
       // MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       // MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-      .name {
-
-        color: darkred;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 25px;
+      #comment {
+        color: #191919;
+        font-family: 'Roboto', sans-serif;
       }
 
-      .comment {
+      #name {
+          color: white;
+          font-family: 'Roboto', sans-serif;
+          margin-top: 5px;
+      }
 
-        color: black;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 40px;
-        border: 3px solid darkred;
-
+      #nameHighlight {
+          background: black;
+          padding: 5px;
+          margin-top: 5px;
       }

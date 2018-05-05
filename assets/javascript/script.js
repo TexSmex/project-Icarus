@@ -108,16 +108,18 @@ database.ref("/user").on("child_added", function(childSnapshot, prevChildKey) {
     var Name = childSnapshot.val().name;
     var CommentUser = childSnapshot.val().comment;
     
-// MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    var space = $("<br>")
-    var nama = $("<div>").text(Name+" : ").addClass("name col-4");
-    var com = $("<div>").text(CommentUser).addClass("comment col-8");
-    var userDiv = $("<div>").addClass("row").append(nama,com,space);
-    $("#resultsDisplayComments").append(userDiv);
+    // MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // MIKE YOUNG THIS IS FOR YOU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     
-});
+    var space = $("<br>");
+    var userInfo = $("<div>").append("<p class='h3 text-center' id='comment'>\"" + CommentUser + "\"</p>" + "<p class='text-center' id='name'>" + "<span id='nameHighlight'>" + Name + "</span>" + "</p>").addClass("col-md-6 text-left m-0 p-3");
+    $("#resultsDisplayComments").append( userInfo, space);
+
+    })
+
+    //  var com = $("<div>").append( "<p class='h3'>\"" + CommentUser + "\"</p>").addClass("comment col-md-8 text-center m-0 py-3");
+
   
   
      $( "#submitBtn" ).click(function() {
