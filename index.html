@@ -24,6 +24,7 @@
 
     <!-- Local external JavaScript file -->
     <script src="assets/javascript/script.js"></script>
+    <!--<script src="assets/javascript/script2.js"></script>-->
 
      <!-- JqueryUI Library's cdn -->
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
@@ -33,6 +34,11 @@
 
     <!-- Google font test -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light" rel="stylesheet">
+
+    <!--Links for Census API-->
+    <script src="https://cdn.rawgit.com/uscensusbureau/citysdk/gh-pages/static/js/citysdk/core/citysdk.js"></script>
+    <script src="https://cdn.rawgit.com/uscensusbureau/citysdk/gh-pages/static/js/citysdk/modules/census.citysdk.js"></script>
+   
 
     <title>Rumble By The River</title>
 
@@ -56,7 +62,7 @@
                     <span class="sr-only">(current)</span>
                 </a>
                 <a class="nav-item nav-link" href="#introPage">MINNEAPOLIS vs ST.PAUL</a>
-                <a class="nav-item nav-link" href="#taleOfTwo">A TALE OF TWO CITIES</a>
+                <a class="nav-item nav-link" href="#taleOfTwo">A TALE OF THE STATE</a>
                 <a id="navLinkBold" class="nav-item nav-link" href="#castYourVote">&nbsp;CAST YOUR VOTE!&nbsp;</a>
             </div>
         </div>
@@ -98,71 +104,45 @@
 
     <!-- A Tale of Two Cities: Info about cities users are asked to compare -->
     <div id="taleOfTwo" class="jumbotron jumbotron-fluid text-center m-0">
-        <div class="container">
-
-            <div id="taleDivBG" class="row m-0 p-3 text-center">
-                <div class="col-md-12">
-                    <h1 class="display-3 mt-3 mb-1">[ A TALE OF TWO CITIES ]</h1>
-                    <p class="lead">A breakdown, by the numbers ...</p>
-                    <hr class="my-3">
+            <div class="container">
+    
+                <div id="taleDivBG" class="row m-0 p-3 text-center">
+                    <div class="col-md-12">
+                        <h1 class="display-3 mt-3 mb-1">[ A TALE OF THE STATE ]</h1>
+                        <p class="lead">A breakdown, by the numbers ...</p>
+                        <hr class="my-3">
+                    </div>
                 </div>
-            </div>
-
-            <table class="table table-borderless table-striped table-light table-responsive w-100 d-block d-md-table mb-0">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">
-                            <h1 class="display-5">MINNEAPOLIS</h1>
-                        </th>
-                        <th scope="col">
-                            <h1 class="display-5">ST.PAUL</h1>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="text-right">POPULATION</th>
-                        <td>350,000</td>
-                        <td>275,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">AVERAGE INCOME</th>
-                        <td>$50,000</td>
-                        <td>$47,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">BURGER JOINTS</th>
-                        <td>476</td>
-                        <td>458</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">MEXICAN RESTAURANTS</th>
-                        <td>476</td>
-                        <td>458</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">ASIAN CUISINE</th>
-                        <td>476</td>
-                        <td>458</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">MEDITERRANEAN</th>
-                        <td>476</td>
-                        <td>458</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">OTHER CATEGORIES</th>
-                        <td>476</td>
-                        <td>458</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-0 m-0"></th>
-                        <td>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+    
+                <table class="table table-borderless table-striped table-light table-responsive w-100 d-block d-md-table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">
+                                <h1 class="display-12 STNAME"></h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-right">POPULATION</th>
+                            <td id = "td1"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-right">YEARLY IMMIGRATION</th>
+                            <td id = "td2"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-right">REGION</th>
+                            <td id = "td3"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-0 m-0"></th>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
             <div class="row m-0 p-0">
                 
